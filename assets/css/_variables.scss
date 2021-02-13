@@ -1,0 +1,108 @@
+@use "sass:color";
+
+// Color system
+// -----------------------------------------------
+$red:       #bf616a;
+$green:     #a3be8c;
+
+$primary:   #d8dee9;
+
+$success:   $green;
+$danger:    $red;
+$dark:      color.scale(#2e3440, $lightness: -18%);
+
+// Options
+// -----------------------------------------------
+$enable-caret:                                false;
+$enable-shadows:                              true;
+
+// Spacing
+// -----------------------------------------------
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9
+);
+
+// Body
+// -----------------------------------------------
+$body-bg:     #2e3440;
+$body-color:  #d8dee9;
+
+// Links
+// -----------------------------------------------
+$link-color:                              color.scale($body-color, $lightness: -15%);
+$link-hover-color:                        $body-color;
+$link-decoration:                         none;
+
+// Grid breakpoints
+// -----------------------------------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px
+);
+
+// Grid containers
+// -----------------------------------------------
+$container-max-widths: (
+  sm: 540px,
+  md: 720px
+);
+
+// Components
+// -----------------------------------------------
+$border-radius:               0.25rem;
+$border-radius-sm:            0.2rem;
+
+$box-shadow-sm:               0 0.125rem 0.25rem color.scale($body-bg, $lightness: -10%, $alpha: -20%);
+
+// Typography
+// -----------------------------------------------
+$font-family-sans-serif:        "Source Sans Pro", sans-serif;
+$font-family-base:              $font-family-sans-serif;
+
+$font-size-base:              1rem;
+
+// Forms
+// -----------------------------------------------
+$input-bg:            $dark;
+$input-disabled-bg:   color.scale($body-bg, $lightness: 10%);
+
+$input-color:         $body-color;
+$input-border-color:  color.scale($body-bg, $lightness: 10%);
+
+$input-placeholder-color:               color.scale($body-color, $lightness: -55%);
+
+$form-check-input-bg:                     color.scale($body-bg, $lightness: 20%);
+
+// Dropdowns
+// -----------------------------------------------
+$dropdown-bg:                       $body-bg;
+
+$dropdown-link-color:               $link-color;
+$dropdown-link-hover-color:         $body-color;
+$dropdown-link-hover-bg:            color.scale($body-bg, $lightness: 10%);
+
+$dropdown-link-active-color:        $body-bg;
+$dropdown-link-active-bg:           $link-color;
+
+// Pagination
+// -----------------------------------------------
+$pagination-bg:             transparent;
+$pagination-border-width:   0;
+
+$pagination-focus-color:    $dark;
+$pagination-focus-bg:       color.scale($body-bg, $lightness: 60%);
+
+$pagination-hover-bg:       color.scale($body-bg, $lightness: 5%);
+
+$pagination-disabled-bg:    transparent;
