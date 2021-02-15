@@ -55,7 +55,7 @@
 export default {
   async asyncData ({ $axios, params, error }) {
     const task = await $axios.$get(`tasks/${params.task}`).catch(() => {
-      return error({ message: 'Page not found.', statusCode: 404 })
+      return error({ message: 'Page not found', statusCode: 404 })
     })
     return {
       task
