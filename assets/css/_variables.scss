@@ -2,14 +2,20 @@
 
 // Color system
 // -----------------------------------------------
-$red:       #bf616a;
-$green:     #a3be8c;
-
 $primary:   #d8dee9;
-
-$success:   $green;
-$danger:    $red;
+$success:   #a3be8c;
+$danger:    #bf616a;
 $dark:      color.scale(#2e3440, $lightness: -18%);
+
+$colors: (
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "success": $success,
+  "danger": $danger,
+  "dark": $dark
+);
 
 // Options
 // -----------------------------------------------
@@ -19,6 +25,7 @@ $enable-shadows:                              true;
 // Spacing
 // -----------------------------------------------
 $spacer: 1rem;
+
 $spacers: (
   0: 0,
   1: $spacer / 4,
