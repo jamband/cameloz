@@ -28,7 +28,9 @@ export default {
   plugins: [
     './plugins/init.client'
   ],
-  components: true,
+  components: [
+    { path: '~/components', pathPrefix: false }
+  ],
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
