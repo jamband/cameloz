@@ -19,7 +19,7 @@
           class="dropdown-item"
           :to="{
             name: 'projects-id-tasks-create',
-            params: { id:this.$route.params.id }
+            params: { id: $route.params.id }
           }"
         >
           Create New Task
@@ -36,7 +36,7 @@
           class="dropdown-item"
           :to="{
             name: 'projects-id-update',
-            params: { id: this.$route.params.id}
+            params: { id: $route.params.id}
           }"
         >
           Rename This Project

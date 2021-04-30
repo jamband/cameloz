@@ -15,7 +15,7 @@
         <NLink
           :to="{
             name: 'projects-id',
-            params: { id: this.$route.params.id }
+            params: { id: $route.params.id }
           }"
           class="dropdown-item"
         >
