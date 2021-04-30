@@ -7,9 +7,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
+    "eslint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "stylelint": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "clean": "rm -rf .nuxt node_modules"
   },
   "dependencies": {
